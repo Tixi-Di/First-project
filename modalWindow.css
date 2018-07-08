@@ -1,0 +1,107 @@
+.modalWindow {
+    /* стили для позиционирования модального окна в центре страницы */
+    width: 700px; /*Задаём ширину окна*/
+    height: 600px;
+    
+    position: fixed;
+    top:50%; /*Позиционируем на 50% от ширины (ширина самого окна тоже суммируется*/
+    left:50%;
+    margin-left: -350px; /*Берём половину от ширины*/
+    margin-top: -300px;
+
+    /*Внешний вид окна*/
+
+    background:url(src/img/bg/1.jpg) repeat;
+    outline: rgba(255, 255, 255, 0.2) solid 6px;
+    box-shadow: 35px -18px 50px black ;
+
+    animation: animationOpenDialog 2s ease-in-out 1;
+}
+
+
+/*Стили для кнопки закрытия модального окна*/ 
+.close {
+    width: 25px;
+    height: 25px;
+    background: none;
+    font-size: 45px;
+    border: none;
+    outline: none; 
+    
+    
+}
+.close:before,
+.close:after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    width: 20px;
+    height: 4px;
+    background: #e62f57;
+    animation: animationBtnClose 4s ease-in-out 1;
+    
+}
+.close:before {
+    content: "";
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* Анимация открытия модального окна*/
+
+@keyframes animationBtnClose {
+    0%  { 
+        top:-100%;
+        right:-100%;
+        background: rgba(255,255,255,0);
+        
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+        visibility: visible;
+        }
+  }
+
+  @keyframes animationOpenDialog {
+    0%  { 
+        width: 0px; 
+        height:0px;
+        top:50%; 
+        left:50%;
+        margin-left: -25px;
+        margin-top: -25px;
+    }
+    100% {
+        width: 700px; 
+        height:600px;
+        top:50%; 
+        left:50%;
+        }
+  }
+
+.modalWindow-fullscreen {
+    position: fixed;
+    background:url(src/img/bg/1.jpg) repeat;
+    outline: rgba(255, 255, 255, 0.2) solid 6px;
+    box-shadow: 35px -18px 50px black ;
+    animation: ModalWindow-fullscreen 5s linear 1; 
+}
+
+/* @keyframes ModalWindow-fullscreen {
+    0%  { 
+        width: 0%; 
+        top:0%; 
+        left:0%;
+    }
+    100% {
+        width:20%;
+        height: 100%;
+        }
+  } */

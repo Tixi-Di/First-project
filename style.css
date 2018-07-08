@@ -1,0 +1,17 @@
+*,html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+#particles-js {
+    position: fixed;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Моё портфолио</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/blocks/menu/menu.css">
+    <link rel="stylesheet" href="modalWindow.css">
+    <link rel="stylesheet" href="src//blocks/menuItemOne/menuItemOne.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    
+    <!-- NAV --> 
+    <nav class="menu">
+        <div class="menu__item">
+            <button class="btn" data-tools="dialog" data-target="#menuItemOne">Где я?</button>
+        </div>
+         <div class="menu__item">
+            <button class="btn" data-tools="dialog" data-target="#menuItemTwo">Портфолио</button>
+        </div>
+        <div class="menu__item">
+            <button class="btn" data-tools="dialog" data-target="#menuItemThree">Контакты</button>
+        </div>
+        <div class="menu__item">
+            <button class="btn" data-tools="dialog" data-target="#menuItemFour">Прочее</button>
+        </div>
+    </nav>
+   
+    <!-- NAV -->
+
+    <!-- modalWindowOne -->
+    <dialog class="modalWindow" id ="menuItemOne" role="dialog">
+        <button class="close" data-action = "modal-close"></button>
+        <div class="menuItemOne__header">
+            <p class="menuItemOne__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatum quos quidem facere ex perferendis vero debitis sed ipsa explicabo nesciunt a minima, nulla illo impedit distinctio expedita cumque nobis?</p>
+        </div>
+        <div class="menuItemOne__main menuItemOne__text">
+            <ul class="main__list">
+                <li>В пункте меню "Портфолио" будут собраны все,имеющиеся на данный момент у меня работы</li>
+                <li>В пункте меню "Связь" вы можете найти контакты для связи со мной</li>
+                <li>В пункте меню "Игра" находится игра,разработанная исключительно ради фана(Альфа)</li>
+            </ul> 
+        </div>
+                     
+    </dialog>
+
+
+    <!-- modalWindowTwo -->
+    <dialog class="modalWindow" id="menuItemTwo">
+        <button class="close" data-action = "modal-close"></button>
+    </dialog>
+
+
+    <!-- modalWindowThree -->
+    <dialog class="modalWindow" id="menuItemThree">
+            <button class="close" data-action = "modal-close"></button>
+    </dialog>
+
+        <!-- modalWindowFour -->
+    <dialog class="modalWindow-fullscreen" id="menuItemFour">
+    </dialog>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="src/lib/Zepto.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

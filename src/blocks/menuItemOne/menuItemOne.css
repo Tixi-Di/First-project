@@ -1,0 +1,33 @@
+.menuItemOne__text {
+    color:white;
+}
+.menuItemOne__header{
+    height: 70px;
+    color:white;
+    
+}
+.main__list {
+    animation: d 5s ease-in-out 1; 
+}
+dialog::backdrop{
+    background: black;
+}
+
+@keyframes animationBgDialog {
+    0%  { 
+        background: rgba(68, 68, 68, 0.425);
+    }
+    100% {
+        background: rgb(43, 43, 43);
+        }
+  }
+
+  @keyframes d {
+      0%{
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+
+  }

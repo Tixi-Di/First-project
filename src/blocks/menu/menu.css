@@ -1,0 +1,61 @@
+
+body {
+    background:url(../../img/bg/4.png) repeat;
+    z-index: 10000;
+}
+.menu {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.menu__item {
+    height: 45px;
+}
+.btn {
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    transition: 0.4s; /*Переход от цвета btn к btn:hover*/
+    /*TODO: Добавить курсор */
+}
+.btn:hover {
+    color: red;
+}
+.btn:active {
+    color: rgb(143, 0, 0);
+}
+.btn:focus {
+    color: red;
+}
+
+
+  
+    /* Настольные компьютеры и ноутбуки ----------- */
+@media only screen  and (min-width: 1224px) {
+    .menu {
+        max-width: 12%;
+    }
+}
+
+@media only screen  and (min-width: 1024px) {
+    .menu {
+        max-width: 15%;
+    }
+}
+@media only screen  and (min-width: 800px) {
+    .menu {
+        max-width: 20%;
+    }
+}
+    
+    /* Большие экраны ----------- */
+@media only screen  and (min-width: 1824px) {
+    .menu {
+        max-width: 12%;
+    }
+}
